@@ -10,6 +10,9 @@ public class FizzBuzzTest
     [InlineData(5, "Buzz")]
     [InlineData(10, "Buzz")]
     [InlineData(30, "FizzBuzz")]
+    [InlineData(90, "FizzBuzz")]
+    [InlineData(99, "Fizz")]
+    [InlineData(100, "Buzz")]
     
     public void SayFizzbuzzTest(int number,string expected)
     {
