@@ -4,6 +4,8 @@ public class FizzBuzz
 {
     public string SayFizzBuzz(int number)
     {
+        if(number % 3 == 0 && number % 5 ==0)
+            return "FizzBuzz";
         if(number == 1)
             return "1";
         if(number == 2)
@@ -11,7 +13,8 @@ public class FizzBuzz
         if(number % 3 == 0)
             return "Fizz";
         if(number % 5 == 0)
-            return "Buzz";
+            return "Buzz";        
+        
             
         return null;
     }
