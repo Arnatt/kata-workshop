@@ -7,6 +7,7 @@ public class FizzBuzzTest
     [InlineData(2, "2")]
     [InlineData(3, "Fizz")]
     [InlineData(6, "Fizz")]
+    [InlineData(5, "Buzz")]
     public void SayFizzbuzzTest(int number,string expected)
     {
         // Arrange
