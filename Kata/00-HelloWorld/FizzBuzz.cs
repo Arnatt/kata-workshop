@@ -4,7 +4,9 @@ public class FizzBuzz
 {
     public string SayFizzBuzz(int number)
     {
-        return "Hello World!";
+        if(number == 1)
+            return "1";
+        return null;
     }
 }
 
