@@ -2,15 +2,16 @@
 namespace Kata.FizzBuzz.Tests;
 public class FizzBuzzTest
 {
-    [Fact]
-    public void SayFizzbuzzTest()
+    [Theory]
+    [InlineData(1, "1")]
+    public void SayFizzbuzzTest(int nuber,string expected)
     {
         // Arrange
-        var expect = new FizzBuzz();
+        var suspect = new FizzBuzz();
         // Act
-        var actual = expect.SayFizzBuzz(1);
+        var actual = suspect.SayFizzBuzz(nuber);
         // Assert
-        actual.Should().Be("1");
+        actual.Should().Be(expected);
     }
 }
 
