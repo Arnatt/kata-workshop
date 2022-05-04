@@ -8,9 +8,7 @@ public class FizzBuzz
             return "1";
         if(number == 2)
             return "2";
-        if(number == 3)
-            return "Fizz";
-        if(number == 6)
+        if(number % 3 == 0)
             return "Fizz";
         return null;
     }
