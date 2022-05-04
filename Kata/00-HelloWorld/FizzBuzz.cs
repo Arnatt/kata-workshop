@@ -10,6 +10,9 @@ public class FizzBuzz
             return "2";
         if(number % 3 == 0)
             return "Fizz";
+        if(number == 5)
+            return "Buzz";
+            
         return null;
     }
 }
